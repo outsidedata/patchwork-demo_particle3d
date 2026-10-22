@@ -1,0 +1,100 @@
+{
+  "player": {
+    "speed": 14,
+    "boost": 4,
+    "climb": 8,
+    "turn": 1.6,
+    "tilt": 0.9,
+    "clear": 1.2,
+    "ceiling": 150,
+    "pace": { "min": 0.2, "max": 5, "step": 0.0015 },
+    "camera": { "minPitch": -0.6, "maxPitch": 1.35 },
+    "sens": 0.0025,
+    "range": 70,
+    "gun": [0, -0.1, 1.5],
+    "keys": {
+      "stick": ["a", "d", "w", "s"],
+      "tilt": ["q", "e"],
+      "up": [" "],
+      "down": ["c"],
+      "fast": ["Shift"],
+      "drag": "Mouse2"
+    },
+    "shots": {
+      "blast": {
+        "key": "1",
+        "emits": [{ "effect": "blast", "at": "aim", "floor": 0 }]
+      },
+      "sparks": {
+        "key": "2",
+        "emits": [{ "effect": "sparks", "at": "aim", "life": 3, "dir": [0, 1, 0], "floor": 0 }]
+      },
+      "smoke": {
+        "key": "3",
+        "emits": [{ "effect": "smoke", "at": "aim", "life": 8 }]
+      },
+      "gun": {
+        "key": "4",
+        "emits": [
+          { "effect": "muzzle", "at": "gun", "dir": "aim" },
+          { "effect": "tracer", "at": "gun", "to": "aim", "dir": "aim", "fly": 90, "land": [{ "effect": "impact", "floor": 0 }] }
+        ]
+      },
+      "laser": {
+        "key": "5",
+        "emits": [
+          { "effect": "laser", "at": "gun", "to": "aim", "life": 3, "keep": true },
+          { "effect": "burn", "at": "aim", "life": 3, "floor": 0, "keep": true }
+        ]
+      },
+      "flares": {
+        "key": "6",
+        "emits": [{ "effect": "flares", "at": "aim", "lift": [0, 1.5, 0], "life": 6 }]
+      },
+      "comet": {
+        "key": "7",
+        "emits": [{ "effect": "trail", "at": "aim", "lift": [0, 3, 0], "ride": "comet", "land": [{ "effect": "pop" }] }]
+      },
+      "rocket": {
+        "key": "8",
+        "emits": [
+          { "effect": "muzzle", "at": "gun", "dir": "aim" },
+          { "effect": "rocket", "at": "gun", "to": "aim", "dir": "aim", "fly": 32, "land": [{ "effect": "blast", "floor": 0 }, { "effect": "smoke", "life": 3 }] }
+        ]
+      }
+    },
+    "craft": {
+      "hull": { "colour": "#d7dce2", "length": 2.4, "nose": 0.12, "tail": 0.3 },
+      "wings": { "colour": "#e0552b", "size": [2.8, 0.08, 0.9], "at": [0, 0, -0.4] },
+      "fin": { "colour": "#e0552b", "size": [0.08, 0.5, 0.45], "at": [0, 0.25, -0.95] },
+      "canopy": { "colour": "#22384f", "radius": 0.27, "scale": [1, 0.8, 2], "at": [0, 0.15, 0.3] },
+      "roughness": 0.5,
+      "metalness": 0.2,
+      "segments": 16
+    },
+    "reticle": { "inner": 0.8, "outer": 1.05, "colour": "#ffd27a", "lift": 0.04, "segments": 48 }
+  },
+  "comet": {
+    "radius": 9,
+    "grow": 1.5,
+    "spin": 1.3,
+    "bob": 1.2,
+    "bobs": 3,
+    "life": 9
+  },
+  "ground": {
+    "size": 600,
+    "colour": "#555a62",
+    "roughness": 0.92,
+    "grid": { "size": 120, "divisions": 24, "lines": "#646b76", "centre": "#7d8592", "lift": 0.01 }
+  },
+  "sky": {
+    "key": { "colour": "#ffd2a8", "intensity": 2.2, "at": [-45, 40, -55], "shadow": { "half": 70, "map": 2048, "bias": -0.0004, "far": 220 } },
+    "fill": { "sky": "#8296c4", "ground": "#3a3028", "intensity": 1.3 },
+    "fog": { "colour": "#2b3448", "near": 90, "far": 420 }
+  },
+  "block": {
+    "colour": "#8a8f98",
+    "roughness": 0.85
+  }
+}

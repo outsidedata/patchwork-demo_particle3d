@@ -1,0 +1,74 @@
+{
+  "cap": 6000,
+  "alphaTest": 0,
+  "ppm": 64,
+  "effects": {
+    "flash": [
+      { "sheet": "particles", "clip": "glow", "life": [0.14, 0.14], "size": [10, 10], "grow": 1.4, "add": true, "gain": 6, "tint": 16765562, "a1": 0, "light": { "intensity": 900, "distance": 40, "decay": 2 } }
+    ],
+    "blast": [
+      { "effect": "flash" },
+      { "sheet": "particles", "clip": "ring", "life": [0.35, 0.35], "size": [2, 2], "grow": 9, "box": [0, 0.4, 0, 0, 0.4, 0], "add": true, "gain": 2, "tint": 16769248, "a0": 0.7, "a1": 0 },
+      { "sheet": "particles", "clip": "smoke", "n": [14, 18], "life": [0.5, 0.9], "size": [1.6, 2.4], "grow": 2.2, "speed": [2, 6], "drag": 2.5, "g": -1.5, "jitter": [0.4, 0.2, 0.4], "add": true, "gain": 3, "tint": 16757575, "tint1": 8003077, "a1": 0, "spin": 1.5 },
+      { "sheet": "particles", "clip": "smoke", "n": [12, 16], "after": 0.1, "life": [3, 5], "size": [2, 3], "grow": 3, "speed": [1.5, 4], "drag": 1.2, "g": -0.6, "jitter": [0.6, 0.2, 0.6], "tint": 3814704, "tint1": 6971221, "a0": 0.85, "a1": 0, "spin": 0.6 },
+      { "sheet": "particles", "clip": "smoke", "n": [10, 12], "life": [1.5, 2.5], "size": [1.5, 2], "grow": 2.5, "dir": [0, 1, 0], "spread": 1.5, "speed": [6, 9], "drag": 2.5, "tint": 5918792, "a0": 0.6, "a1": 0, "spin": 0.4 },
+      { "sheet": "particles", "clip": "spark", "n": [30, 40], "life": [0.5, 1.3], "size": [0.5, 0.8], "dir": [0, 1, 0], "spread": 1.3, "speed": [10, 24], "g": 9.8, "drag": 0.6, "stretch": true, "add": true, "gain": 4, "tint": 16765562, "tint1": 16734746 },
+      { "sheet": "particles", "clip": "debris", "n": [10, 14], "life": [1.8, 2.6], "size": [0.25, 0.5], "dir": [0, 1, 0], "spread": 0.9, "speed": [6, 13], "g": 9.8, "drag": 0.2, "spin": 8, "tint": 1841688, "fade": 0.5, "a1": 0 }
+    ],
+    "sparks": [
+      { "sheet": "particles", "clip": "spark", "n": [3, 6], "every": 0.03, "life": [0.4, 1], "size": [0.3, 0.5], "spread": 0.6, "speed": [5, 11], "g": 9.8, "drag": 0.3, "stretch": true, "add": true, "gain": 4, "tint": 16765562, "tint1": 16734746 },
+      { "sheet": "particles", "clip": "glow", "every": 0.06, "life": [0.12, 0.12], "size": [1.2, 1.8], "add": true, "gain": 3, "tint": 16757575, "a1": 0, "light": { "intensity": 60, "distance": 10, "decay": 2 } },
+      { "sheet": "particles", "clip": "smoke", "every": 0.25, "life": [1.5, 2.5], "size": [0.6, 0.9], "grow": 3, "spread": 0.3, "speed": [0.5, 1], "g": -0.4, "tint": 6971221, "a0": 0.35, "a1": 0, "spin": 0.5 }
+    ],
+    "smoke": [
+      { "sheet": "particles", "clip": "smoke", "n": [1, 2], "every": 0.08, "life": [4, 6], "size": [1.6, 2.4], "grow": 5, "dir": [0, 1, 0], "spread": 0.35, "speed": [1.5, 2.5], "g": -0.4, "drag": 0.25, "jitter": [0.4, 0, 0.4], "tint": 2762274, "tint1": 9078144, "a0": 0.9, "a1": 0, "spin": 0.4 },
+      { "sheet": "particles", "clip": "smoke", "every": 0.05, "life": [0.4, 0.6], "size": [0.8, 1.2], "grow": 0.4, "dir": [0, 1, 0], "spread": 0.3, "speed": [1, 2], "jitter": [0.3, 0, 0.3], "add": true, "gain": 2.5, "tint": 16757575, "tint1": 8003077, "a1": 0, "spin": 2 },
+      { "sheet": "particles", "clip": "glow", "n": [1, 2], "every": 0.1, "life": [1.5, 2.5], "size": [0.12, 0.2], "dir": [0, 1, 0], "spread": 0.5, "speed": [1, 3], "g": -0.5, "jitter": [0.4, 0, 0.4], "add": true, "gain": 4, "tint": 16738816, "tint1": 11550736, "a1": 0 }
+    ],
+    "muzzle": [
+      { "sheet": "particles", "clip": "star", "life": [0.06, 0.06], "size": [1.4, 1.8], "add": true, "gain": 5, "tint": 16765562, "a1": 0 },
+      { "sheet": "particles", "clip": "spark", "life": [0.06, 0.06], "size": [1.2, 1.2], "face": true, "origin": [0, 0.5], "add": true, "gain": 5, "tint": 16769248 },
+      { "sheet": "particles", "clip": "glow", "life": [0.08, 0.08], "size": [2, 2], "add": true, "gain": 3, "tint": 16757575, "a1": 0, "light": { "intensity": 80, "distance": 12, "decay": 2 } },
+      { "sheet": "particles", "clip": "smoke", "n": [2, 3], "life": [0.6, 1], "size": [0.3, 0.5], "grow": 3, "spread": 0.4, "speed": [1, 2], "drag": 2, "tint": 9078144, "a0": 0.4, "a1": 0 }
+    ],
+    "tracer": [
+      { "sheet": "particles", "clip": "spark", "lasts": true, "follow": true, "size": [2.6, 2.6], "face": true, "add": true, "gain": 6, "tint": 16765562 }
+    ],
+    "impact": [
+      { "sheet": "particles", "clip": "glow", "life": [0.08, 0.08], "size": [1.5, 1.5], "add": true, "gain": 4, "tint": 16765562, "a1": 0 },
+      { "sheet": "particles", "clip": "spark", "n": [8, 12], "life": [0.3, 0.6], "size": [0.3, 0.4], "dir": [0, 1, 0], "spread": 1.2, "speed": [4, 9], "g": 9.8, "stretch": true, "add": true, "gain": 4, "tint": 16765562, "tint1": 16734746 },
+      { "sheet": "particles", "clip": "smoke", "n": [2, 3], "life": [0.8, 1.2], "size": [0.5, 0.8], "grow": 2.5, "dir": [0, 1, 0], "spread": 0.8, "speed": [0.5, 1.5], "drag": 1.5, "tint": 5918792, "a0": 0.6, "a1": 0 }
+    ],
+    "laser": [
+      { "sheet": "particles", "clip": "beam", "lasts": true, "size": [0.7, 0.7], "beam": true, "add": true, "gain": 5, "tint": 16769248 },
+      { "sheet": "particles", "clip": "beam", "lasts": true, "size": [2.6, 2.6], "beam": true, "add": true, "gain": 2, "tint": 16726843, "a0": 0.8, "a1": 0.8 },
+      { "sheet": "particles", "clip": "glow", "lasts": true, "follow": true, "size": [1.2, 1.2], "add": true, "gain": 4, "tint": 16726843 }
+    ],
+    "burn": [
+      { "sheet": "particles", "clip": "spark", "n": [2, 4], "every": 0.03, "life": [0.3, 0.7], "size": [0.25, 0.35], "dir": [0, 1, 0], "spread": 1, "speed": [3, 8], "g": 9.8, "stretch": true, "add": true, "gain": 4, "tint": 16765562, "tint1": 16734746 },
+      { "sheet": "particles", "clip": "glow", "every": 0.05, "life": [0.1, 0.1], "size": [1.5, 2], "add": true, "gain": 4, "tint": 16726843, "a1": 0, "light": { "intensity": 70, "distance": 10, "decay": 2 } },
+      { "sheet": "particles", "clip": "smoke", "every": 0.1, "life": [1.2, 2], "size": [0.5, 0.8], "grow": 3, "dir": [0, 1, 0], "spread": 0.4, "speed": [0.8, 1.5], "g": -0.4, "tint": 3814704, "a0": 0.5, "a1": 0, "spin": 0.5 }
+    ],
+    "flares": [
+      { "sheet": "particles", "clip": "glow", "n": [3, 3], "life": [5, 6], "size": [1.4, 1.8], "speed": [3, 4.5], "g": -0.15, "drag": 1.2, "add": true, "gain": 4, "tint": 8050687, "fade": 1, "a1": 0, "light": { "intensity": 40, "distance": 10, "decay": 2 } },
+      { "sheet": "particles", "clip": "glow", "n": [3, 3], "life": [5, 6], "size": [1.4, 1.8], "speed": [3, 4.5], "g": -0.15, "drag": 1.2, "add": true, "gain": 4, "tint": 16743129, "fade": 1, "a1": 0, "light": { "intensity": 40, "distance": 10, "decay": 2 } },
+      { "sheet": "particles", "clip": "glow", "n": [3, 3], "life": [5, 6], "size": [1.4, 1.8], "speed": [3, 4.5], "g": -0.15, "drag": 1.2, "add": true, "gain": 4, "tint": 16765562, "fade": 1, "a1": 0, "light": { "intensity": 40, "distance": 10, "decay": 2 } },
+      { "sheet": "particles", "clip": "glow", "n": [1, 2], "every": 0.05, "life": [0.8, 1.4], "size": [0.1, 0.18], "speed": [0.5, 1.5], "g": -0.6, "add": true, "gain": 5, "tint": 16777215, "a1": 0 }
+    ],
+    "trail": [
+      { "sheet": "particles", "clip": "glow", "lasts": true, "follow": true, "size": [1.4, 1.4], "add": true, "gain": 4, "tint": 10475775, "light": { "intensity": 50, "distance": 12, "decay": 2 } },
+      { "sheet": "particles", "clip": "glow", "n": [2, 2], "every": 0.016, "life": [0.6, 1], "size": [0.5, 0.8], "grow": 0.2, "speed": [0, 0.4], "jitter": [0.1, 0.1, 0.1], "add": true, "gain": 3, "tint": 10475775, "tint1": 7036159, "a1": 0 },
+      { "sheet": "particles", "clip": "glow", "every": 0.05, "life": [0.8, 1.4], "size": [0.1, 0.18], "speed": [0.5, 1.5], "g": 2, "add": true, "gain": 5, "tint": 16777215, "a1": 0 }
+    ],
+    "pop": [
+      { "sheet": "particles", "clip": "glow", "life": [0.2, 0.2], "size": [5, 5], "add": true, "gain": 4, "tint": 10475775, "a1": 0, "light": { "intensity": 200, "distance": 20, "decay": 2 } },
+      { "sheet": "particles", "clip": "spark", "n": [24, 30], "life": [0.6, 1], "size": [0.35, 0.5], "speed": [6, 12], "g": 2, "drag": 1.5, "stretch": true, "add": true, "gain": 4, "tint": 10475775, "tint1": 7036159 },
+      { "sheet": "particles", "clip": "ring", "life": [0.4, 0.4], "size": [1.5, 1.5], "grow": 6, "add": true, "gain": 2, "tint": 10475775, "a0": 0.8, "a1": 0 }
+    ],
+    "rocket": [
+      { "sheet": "particles", "clip": "glow", "lasts": true, "follow": true, "size": [1.2, 1.2], "add": true, "gain": 5, "tint": 16757575, "light": { "intensity": 60, "distance": 14, "decay": 2 } },
+      { "sheet": "particles", "clip": "glow", "every": 0.012, "life": [0.15, 0.25], "size": [0.5, 0.8], "grow": 0.3, "add": true, "gain": 3, "tint": 16757575, "tint1": 16734746, "a1": 0 },
+      { "sheet": "particles", "clip": "smoke", "every": 0.02, "life": [1.5, 2.5], "size": [0.4, 0.6], "grow": 4, "speed": [0.2, 0.6], "drag": 1, "g": -0.3, "tint": 9078144, "tint1": 13156024, "a0": 0.55, "a1": 0, "spin": 0.8 }
+    ]
+  }
+}
